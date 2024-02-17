@@ -3,15 +3,22 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1"> 
-<link type="image/png" sizes="16x16" rel="icon" href=".../icons8-q-16.png">
-<link type="image/png" sizes="32x32" rel="icon" href=".../icons8-q-32.png">
-<link type="image/png" sizes="96x96" rel="icon" href=".../icons8-q-96.png">
+    <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-q-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href=".../icons8-q-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href=".../icons8-q-96.png">
     <title>Quotes</title>
-<style>
-body{
-background-color: #90EE90;
-}
-</style>
+    <style>
+        body {
+            background-color: #90EE90;
+        }
+        #quote {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
 </head> 
 <body> 
     <h1>Success Quotes</h1>
@@ -22,9 +29,10 @@ background-color: #90EE90;
         .then(response => response.json())
         .then(data => {
             const quote = data.quote;
-            document.getElementById('quote').innerHTML = `<p><p><h3><b>${quote}</b></h3>`;
+            document.getElementById('quote').innerHTML = `<h3><b>${quote}</b></h3>`;
         })
         .catch(error => console.error('Error:', error));
-    </script><h6><strong>Hello There all fellows who are here thank you for visiting!! :)</strong></h6>
+    </script>
+    <h6><strong>Hello There all fellows who are here thank you for visiting!! :)</strong></h6>
 </body>
 </html>
