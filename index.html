@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <title>Quotes</title>
+<style>
+body{
+background-color: #90EE90;
+}
+</style>
+</head> 
+<body> 
+    <h1>Success Quotes</h1>
+    <div id="quote"></div>
+
+    <script>
+        fetch('api.php')
+        .then(response => response.json())
+        .then(data => {
+            const quote = data.quote;
+            document.getElementById('quote').innerHTML = `<p><p><h3><b>${quote}</b></h3>`;
+        })
+        .catch(error => console.error('Error:', error));
+    </script><h6><strong>Hello There all fellows who are here thank you for visiting!! :)</strong></h6>
+</body>
+</html>
