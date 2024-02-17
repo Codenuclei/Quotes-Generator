@@ -24,14 +24,9 @@
     <h1>Success Quotes</h1>
     <div id="quote"></div>
 
+    <script src="script.js"></script>
     <script>
-        fetch('http://codenest-server.42web.io/Api/Quotes/api.php')
-        .then(response => response.json())
-        .then(data => {
-            const quote = data.quote;
-            document.getElementById('quote').innerHTML = `<h3><b>${quote}</b></h3>`;
-        })
-        .catch(error => console.error('Error:', error));
+        getQuote();
     </script>
     <h6><strong>Hello There all fellows who are here thank you for visiting!! :)</strong></h6>
 </body>
