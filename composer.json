@@ -1,0 +1,22 @@
+{
+    "name": "codespace/quotes-generator",
+    "description": "A PHP Quotes Generator",
+    "type": "library",
+    "require": {
+        "php": "^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Codenuclei",
+            "email": "abhishekghoshedu@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Codespace\\QuotesGenerator\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
